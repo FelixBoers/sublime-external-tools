@@ -1,16 +1,24 @@
 {
   "apps": [
     {
-        "id": "conemu_git",
-        "name": "ConEmu (Git bash)",
-        "cmd": [
-          "C:\\\\Program Files\\\\ConEmu\\\\ConEmu64.exe",
-          "/Single",
-          "/Dir", 
-          "${folder}",
-          "/Run", 
-          "{Git bash}"
-        ]
+      "id": "conemu_git",
+      "name": "ConEmu (Git bash)",
+      "cmd": [
+        "C:\\\\Program Files\\\\ConEmu\\\\ConEmu64.exe",
+        "/Single",
+        "/Dir", 
+        "${folder}",
+        "/Run", 
+        "{Git bash}"
+      ]
+    },
+    {
+      "id": "explorer",
+      "name": "Explorer",
+      "cmd": [
+        "explorer.exe",
+        "${folder}"
+      ]
     }
   ]
 }

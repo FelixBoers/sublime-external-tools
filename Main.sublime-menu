@@ -48,6 +48,12 @@
                                 "caption": "Key Bindings - User",                                
                                 "command": "external_tools_open_file",
                                 "args": { "file": "${packages}/User/Default (${platform}).sublime-keymap" }
+                            },
+                            {"caption":"-"},
+                            {
+                                "caption": "Command Palette",
+                                "command": "open_file",
+                                "args": {"file": "${packages}/ExternalTools/Default.sublime-commands"}
                             }
                         ]
                     }

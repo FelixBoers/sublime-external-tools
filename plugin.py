@@ -34,7 +34,7 @@ class ExternalToolsRunCommand(sublime_plugin.WindowCommand):
 
     def run_app(self, app):
         cmd = self.expand_variables(app['cmd'])        
-        print(cmd)
+        print("External tool: %s" % cmd)
         sublime.status_message("Start %s" % app['name'])
         subprocess.Popen(cmd)    
     
