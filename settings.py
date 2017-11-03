@@ -18,7 +18,7 @@ class ViewSettings(object):
         self._settings = view.settings()
 
     def get(self, key, default=None):
-        result = self._settings.get('run_apps_' + key)
+        result = self._settings.get('external_tools_' + key)
         if (result is not None):
             return result
         return get(key, default)
