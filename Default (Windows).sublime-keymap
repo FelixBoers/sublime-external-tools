@@ -1,0 +1,4 @@
+[
+	{ "keys": ["alt+g"], "command": "external_tools_run", "args": {"id":"conemu_git"} },
+	{ "keys": ["alt+e"], "command": "external_tools_run", "args": {"id":"explorer"} } 
+]

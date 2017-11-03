@@ -1,0 +1,11 @@
+[
+	{
+		"caption": "Run external tool",
+		"command": "external_tools_run"
+	},
+	{
+		"caption": "Run external tool: Git (ConEmu)",
+		"command": "external_tools_run",
+		"args": {"id": "conemu_git"}
+	}
+]

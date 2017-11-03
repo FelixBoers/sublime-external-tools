@@ -1,0 +1,58 @@
+[
+    {        
+        "id": "preferences",
+        "children":
+        [
+            {                
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "Run Apps",
+                        "id": "run-apps",
+                        "children":
+                        [
+                            {
+                                "caption": "Settings",                                
+                                "command": "run_apps_edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/RunApps/RunApps.sublime-settings",
+                                    "default": "// RunApps Settings - User\n{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "Settings - Default",                                
+                                "command": "run_apps_open_file",
+                                "args": { "file": "${packages}/RunApps/RunApps.sublime-settings" }
+                            },
+                            {
+                                "caption": "Settings - User",                                
+                                "command": "run_apps_open_file",
+                                "args": { "file": "${packages}/User/RunApps.sublime-settings" }
+                            },
+                            { "caption": "-" },
+                            {
+                                "caption": "Key Bindings",
+                                "command": "run_apps_edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/RunApps/Default (${platform}).sublime-keymap",
+                                    "default": "// RunApps Key Bindings - User\n{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings - Default",                                
+                                "command": "run_apps_open_file",
+                                "args": { "file": "${packages}/RunApps/Default (${platform}).sublime-keymap" }
+                            },
+                            {
+                                "caption": "Key Bindings - User",                                
+                                "command": "run_apps_open_file",
+                                "args": { "file": "${packages}/User/Default (${platform}).sublime-keymap" }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
