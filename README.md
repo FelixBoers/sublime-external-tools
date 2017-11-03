@@ -8,8 +8,9 @@ Run any external tool with a keyboard shortcut or with the command palette.
 **Git clone**
 * Enter directory through "Browse Packages..." in Sublime Text "Preferences"
 * Run
+
     ```
-    git clone https://github.com/FelixBoers/sublime-external-tools.git
+    git clone https://scm.felixboers.de/fboers/sublime-external-tools.git ./ExternalTools
     ```
 
 ## Usage
