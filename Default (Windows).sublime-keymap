@@ -1,6 +1,0 @@
-[
-	{ "keys": ["alt+1"], "command": "external_tools_run", "args": {"id":"conemu_git"} },
-	{ "keys": ["alt+2"], "command": "external_tools_run", "args": {"id":"explorer"} },
-	{ "keys": ["alt+3"], "command": "external_tools_run", "args": {"cmd": ["explorer.exe", "/select,", "$file"]} },
-	{ "keys": ["alt+4"], "command": "external_tools_run", "args": {"cmd": ["C:/Program Files/Git/bin/bash.exe"], "working_dir": "${project_path:$folder}" }}
-]

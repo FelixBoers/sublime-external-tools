@@ -1,3 +1,0 @@
-[
-	{ "keys": ["f5"], "command": "external_tools_run", "args": {"id":"git"} } 
-]
