@@ -4,10 +4,10 @@
       "id": "conemu_git",
       "name": "ConEmu (Git bash)",
       "cmd": [
-        "C:\\\\Program Files\\\\ConEmu\\\\ConEmu64.exe",
+        "C:/Program Files/ConEmu/ConEmu64.exe",
         "/Single",
         "/Dir", 
-        "${folder}",
+        "$folder",
         "/Run", 
         "{Git bash}"
       ]
@@ -17,7 +17,8 @@
       "name": "Explorer",
       "cmd": [
         "explorer.exe",
-        "${folder}"
+        "/select,",
+        "$file"
       ]
     }
   ]

@@ -2,10 +2,5 @@
 	{
 		"caption": "External tool",
 		"command": "external_tools_run"
-	},
-	{
-		"caption": "External tool: Git (ConEmu)",
-		"command": "external_tools_run",
-		"args": {"id": "conemu_git"}
 	}
 ]
