@@ -123,3 +123,43 @@ ${project_path:$folder}		# If no project opened use first folder
 ```
 
 The name of the placeholder is case sensitive!
+
+## Sample configurations
+
+**ConEmu with Git bash in current folder**
+
+```json
+{
+  "apps": [
+    {
+      "id": "conemu_git",
+      "name": "ConEmu (Git bash)",
+      "cmd": [
+        "C:\\\\Program Files\\\\ConEmu\\\\ConEmu64.exe",
+        "/Single",
+        "/Dir", 
+        "${folder}",
+        "/Run", 
+        "{Git bash}"
+      ]
+    }
+  ]
+}
+```
+
+**Windows Explorer with current file selected**
+```json
+{
+  "apps": [    
+    {
+      "id": "explorer",
+      "name": "Explorer",
+      "cmd": [
+        "explorer.exe",
+        "/select,",
+        "$file"
+      ]
+    }
+  ]
+}
+```

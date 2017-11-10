@@ -11,49 +11,22 @@
                         "caption": "External Tools",
                         "id": "external-tools",
                         "children":
-                        [
+                        [      
                             {
-                                "caption": "Settings",                                
-                                "command": "external_tools_edit_settings",
+                                "caption": "Settings",
+                                "command": "edit_settings",
                                 "args": {
                                     "base_file": "${packages}/ExternalTools/ExternalTools.sublime-settings",
-                                    "default": "// ExternalTools Settings - User\n{\n\t$0\n}\n"
+                                    "default": "// ExternalTools Settings - User\n{\t\"apps\": [\n\t\t$0\t]\n}\n"
                                 }
-                            },
-                            {
-                                "caption": "Settings - Default",                                
-                                "command": "external_tools_open_file",
-                                "args": { "file": "${packages}/ExternalTools/ExternalTools.sublime-settings" }
-                            },
-                            {
-                                "caption": "Settings - User",                                
-                                "command": "external_tools_open_file",
-                                "args": { "file": "${packages}/User/ExternalTools.sublime-settings" }
-                            },
-                            { "caption": "-" },
-                            {
-                                "caption": "Key Bindings",
-                                "command": "external_tools_edit_settings",
-                                "args": {
-                                    "base_file": "${packages}/ExternalTools/Default (${platform}).sublime-keymap",
-                                    "default": "// ExternalTools Key Bindings - User\n{\n\t$0\n}\n"
-                                }
-                            },
-                            {
-                                "caption": "Key Bindings - Default",                                
-                                "command": "external_tools_open_file",
-                                "args": { "file": "${packages}/ExternalTools/Default (${platform}).sublime-keymap" }
-                            },
-                            {
-                                "caption": "Key Bindings - User",                                
-                                "command": "external_tools_open_file",
-                                "args": { "file": "${packages}/User/Default (${platform}).sublime-keymap" }
-                            },
-                            {"caption":"-"},
+                            },                      
                             {
                                 "caption": "Command Palette",
-                                "command": "open_file",
-                                "args": {"file": "${packages}/ExternalTools/Default.sublime-commands"}
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/ExternalTools/ExternalTools.sublime-commands",
+                                    "default": "// ExternalTools Commands - User\n[\n\t{\n\t\t\"caption\": \"${1:The display name of your command}\",\n\t\t\"command\":\"external_tools_run\",\n\t\t\"args\": { \"cmd\": [$0] }\n\t}\n]\n"
+                                }
                             }
                         ]
                     }

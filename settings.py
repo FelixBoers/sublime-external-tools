@@ -33,10 +33,6 @@ class ExternalToolsOpenFileCommand(sublime_plugin.ApplicationCommand):
         file = file.replace('${platform}', platform)
         sublime.run_command('open_file', {'file': file})
 
-    @staticmethod
-    def is_visible():
-        return STVER < 3124
-
 class ExternalToolsEditSettingsCommand(sublime_plugin.ApplicationCommand):
     @staticmethod
     def run(**kwargs):

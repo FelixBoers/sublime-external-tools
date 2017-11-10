@@ -1,6 +1,6 @@
 [
 	{
-		"caption": "External tool",
+		"caption": "ExternalTool:",
 		"command": "external_tools_run"
 	}
 ]
