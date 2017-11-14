@@ -1,6 +1,8 @@
 # Sublime External Tools
 
 ## [Unreleased]
+
+## [1.0.2] - 2017-11-14
 - [FIXED] Running an external tool fails if no "apps" are defined in Preferences (fixes #1)
 
 ## [1.0.1] - 2017-11-10
