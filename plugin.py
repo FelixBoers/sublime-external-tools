@@ -10,11 +10,10 @@ class ExternalToolsRunCommand(sublime_plugin.WindowCommand):
         self.environ = os.environ.copy()
         self.apps = settings.ViewSettings(self.window.active_view()).get('apps')
 
-        if self.apps.count == 0:
-            sublime.status_message("No apps defined")
-            return
-
         if id is not None:
+            if not self.apps:
+                sublime.status_message("No apps defined")
+                return
             app = next(a for a in self.apps if a['id'] == id)
             if (app is None):
                 sublime.status_message("App with id %s not found" % (id))

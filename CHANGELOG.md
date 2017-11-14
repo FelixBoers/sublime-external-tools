@@ -1,6 +1,7 @@
 # Sublime External Tools
 
 ## [Unreleased]
+- [FIXED] Running an external tool fails if no "apps" are defined in Preferences (fixes #1)
 
 ## [1.0.1] - 2017-11-10
 - [FIXED] Default key bindings
