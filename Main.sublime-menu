@@ -16,7 +16,7 @@
                                 "command": "edit_settings",
                                 "args": {
                                     "base_file": "${packages}/ExternalTools/ExternalTools.sublime-settings",
-                                    "default": "// ExternalTools Settings - User\n{\t\"apps\": [\n\t\t$0\t]\n}\n"
+                                    "default": "// ExternalTools Settings - User\n{\t\"apps\": [\n\t\t{\n\t\t\t\"id\": \"${1:id}\",\n\t\t\t\"name\": \"${2:display name}\",\n\t\t\t\"cmd\": [\"${0:cmd}\"]\n\t\t}\n\t]\n}\n"
                                 }
                             },                      
                             {
