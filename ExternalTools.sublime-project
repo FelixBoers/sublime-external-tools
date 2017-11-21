@@ -13,5 +13,10 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"extra_paths": [
+			"C:/Program Files/Sublime Text 3"
+		]
+	}
 }
