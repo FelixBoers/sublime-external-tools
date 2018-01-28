@@ -9,7 +9,7 @@ Run any external tool with an keyboard shortcut and/or via the command palette.
 - Open *Preferences --> Key bindings*
 - Add ```{ "keys": ["alt+1"], "command": "external_tools_run", "args": {"cmd": ["explorer.exe", "/select,", "$file"]}}```
 - Save & close
-- Press `ALT+1` 
+- Press `ALT+1`
 
 ## Installation
 
@@ -32,7 +32,7 @@ Just type `CTRL+SHIFT+P` (or if you're on a mac: `CMD+SHIFT+P`) to bring up the 
 
 ### Custom key bindings
 
-You can add custom keybinding by go to *Settings -> Key Bindings* and bind your keystrokes to the `external_tools_run` command. 
+You can add custom keybinding by go to *Settings -> Key Bindings* and bind your keystrokes to the `external_tools_run` command.
 
 - Open Windows Explorer with the current file selected:
 	```json
@@ -101,19 +101,22 @@ All apps defined in the plugin settings are listed if you run *External Tool* vi
 
 Along to all your system environment variables the following variables are getting expanded too:
 
-|      Variable      |                          Description                           |
-|--------------------|----------------------------------------------------------------|
-| $file              | The full path to the current file, e.g., C:\Files\Chapter1.txt |
-| $file_path         | The directory of the current file, e.g., C:\Files              |
-| $file_extension    | The name portion of the current file, e.g., txt                |
-| $file_base_name    | The name only portion of the current file, e.g., Document      |
-| $packages          | The full path to the Packages folder                           |
-| $folder            | The path to the first folder opened in the current project     |
-| $project           | The full path to the current project file                      |
-| $project_path      | The directory of the current project file                      |
-| $project_name      | The name portion of the current project file                   |
-| $project_extension | The extension portion of the current project file              |
-| $project_base_name | The name-only portion of the current project file              |
+|      Variable      |                          Description                                    |
+|--------------------|-------------------------------------------------------------------------|
+| $file              | The full path to the current file, e.g., C:\Files\Chapter1.txt          |
+| $file_path         | The directory of the current file, e.g., C:\Files                       |
+| $file_extension    | The name portion of the current file, e.g., txt                         |
+| $file_base_name    | The name only portion of the current file, e.g., Document               |
+| $packages          | The full path to the Packages folder                                    |
+| $folder            | The path to the first folder opened in the current project              |
+| $project           | The full path to the current project file                               |
+| $project_path      | The directory of the current project file                               |
+| $project_name      | The name portion of the current project file                            |
+| $project_extension | The extension portion of the current project file                       |
+| $project_base_name | The name-only portion of the current project file                       |
+| $line_begin        | The current line of the current file or the first line of the selection |
+| $line_end          | The current line of the current file or the last line of the selection  |
+| $line              | Same as $line_begin                                                     |
 
 Placeholder variables are supported too:
 
@@ -137,9 +140,9 @@ The name of the placeholder is case sensitive!
       "cmd": [
         "C:\\\\Program Files\\\\ConEmu\\\\ConEmu64.exe",
         "/Single",
-        "/Dir", 
+        "/Dir",
         "${folder}",
-        "/Run", 
+        "/Run",
         "{Git bash}"
       ]
     }
@@ -150,7 +153,7 @@ The name of the placeholder is case sensitive!
 **Windows Explorer with current file selected**
 ```json
 {
-  "apps": [    
+  "apps": [
     {
       "id": "explorer",
       "name": "Explorer",

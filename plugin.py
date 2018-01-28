@@ -70,4 +70,12 @@ class ExternalToolsRunCommand(sublime_plugin.WindowCommand):
     def get_variables(self):
         variables = self.window.extract_variables()
         variables.update(self.environ)
+
+        view = self.window.active_view()
+        region = view.sel()[0]
+        lines = view.line(region)
+        variables['line_begin'] = str(view.rowcol(lines.begin())[0] + 1)
+        variables['line_end'] = str(view.rowcol(lines.end())[0] + 1)
+        variables['line'] = variables['line_begin']
+
         return variables
